@@ -13,6 +13,7 @@ export PROMPT_COMMAND='__git_ps1 "\[\033[0;31m\]\u\[\033[0m\]@\[\033[0;34m\]\h\[
 export HISTFILESIZE=10000
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWCOLORHINTS=1
+export GIT_PS1_SHOWUPSTREAM="auto"
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
