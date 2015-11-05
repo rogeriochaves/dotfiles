@@ -1,0 +1,18 @@
+set imap_user = "rchaves@thoughtworks.com"
+
+set smtp_url = "smtps://rchaves@thoughtworks.com@smtp.gmail.com:465/"
+set from = "rchaves@thoughtworks.com"
+set realname = "Rogerio Chaves"
+set smtp_authenticators = 'gssapi:login'
+
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set postponed= "+[Gmail]/Drafts"
+set imap_check_subscribed
+
+set certificate_file=~/.mutt/certificates
+
+set move = no
+
+source ~/.mutt/passwords
+source ~/.mutt/crypto
