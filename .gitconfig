@@ -26,3 +26,5 @@
   default = simple
 [github]
   user = rogeriochaves
+[credential]
+  helper = osxkeychain

@@ -1,4 +1,5 @@
 export PATH=/usr/local/Cellar/python/2.7.9/bin:$PATH:~/bin
+export PATH=$PATH:/usr/local/bin/
 
 alias s=subl
 alias g=git
