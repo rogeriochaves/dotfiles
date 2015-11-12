@@ -10,5 +10,8 @@ mkdir ~/.mutt
 cp "$(pwd)/.mutt/passwords" ~/.mutt/passwords
 ln -s "$(pwd)/.mutt/crypto" ~/.mutt/crypto
 
+# tmux
+ln -s "$(pwd)/.tmux.conf" ~/.tmux.conf
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 exit 0
