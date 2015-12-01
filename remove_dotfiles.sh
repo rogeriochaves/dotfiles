@@ -12,4 +12,7 @@ rm -r ~/.mutt
 rm ~/.tmux.conf
 rm -r ~/.tmux
 
+# vim
+rm ~/.vim
+
 exit 0

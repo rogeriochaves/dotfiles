@@ -15,4 +15,9 @@ ln -s "$(pwd)/.tmux.conf" ~/.tmux.conf
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 brew install reattach-to-user-namespace
 
+# vim
+ln -s "$(pwd)/.vim" ~/.vim
+git submodule init
+git submodule update
+
 exit 0
