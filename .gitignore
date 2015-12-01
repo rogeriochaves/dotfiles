@@ -3,3 +3,10 @@ Thumbs.db
 *.swp
 .rvmrc
 *.swo
+
+*.un~
+swap
+undo
+
+vimrc.local
+gvimrc.local
