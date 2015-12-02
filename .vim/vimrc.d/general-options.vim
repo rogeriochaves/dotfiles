@@ -40,7 +40,6 @@ set lcs=eol:↩,trail:·,tab:»·
 set modelines=0
 set nowrap
 set number
-set regexpengine=1
 set ruler
 set shiftwidth=2
 set showcmd
