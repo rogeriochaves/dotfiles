@@ -15,4 +15,7 @@ rm -r ~/.tmux
 # vim
 rm ~/.vim
 
+# speed up keystroke
+defaults delete NSGlobalDomain KeyRepeat
+
 exit 0

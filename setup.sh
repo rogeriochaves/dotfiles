@@ -20,4 +20,7 @@ ln -s "$(pwd)/.vim" ~/.vim
 git submodule init
 git submodule update
 
+# speed up keystroke
+defaults write -g KeyRepeat -int 0.5
+
 exit 0
