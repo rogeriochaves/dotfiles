@@ -1,22 +1,22 @@
 #!/bin/sh
 
-ln -s "$(pwd)/.bash_profile" ~/.bash_profile
-ln -s "$(pwd)/.gitconfig" ~/.gitconfig
-ln -s "$(pwd)/.gitignore" ~/.gitignore
+ln -s "$(pwd)/.bash_profile" ~
+ln -s "$(pwd)/.gitconfig" ~
+ln -s "$(pwd)/.gitignore" ~
 
 # mutt
-ln -s "$(pwd)/.muttrc" ~/.muttrc
+ln -s "$(pwd)/.muttrc" ~
 mkdir ~/.mutt
-cp "$(pwd)/.mutt/passwords" ~/.mutt/passwords
-ln -s "$(pwd)/.mutt/crypto" ~/.mutt/crypto
+cp "$(pwd)/.mutt/passwords" ~/.mutt
+ln -s "$(pwd)/.mutt/crypto" ~/.mutt
 
 # tmux
-ln -s "$(pwd)/.tmux.conf" ~/.tmux.conf
+ln -s "$(pwd)/.tmux.conf" ~
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 brew install reattach-to-user-namespace
 
 # vim
-ln -s "$(pwd)/.vim" ~/.vim
+ln -s "$(pwd)/.vim" ~
 git submodule init
 git submodule update
 
