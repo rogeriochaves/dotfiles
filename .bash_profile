@@ -1,5 +1,6 @@
 export PATH=/usr/local/Cellar/python/2.7.9/bin:$PATH:~/bin
 export PATH=$PATH:/usr/local/bin/
+export PATH="$HOME/Library/Haskell/bin:$PATH"
 export TERM=xterm-256color
 
 alias s=subl
