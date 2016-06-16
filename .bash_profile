@@ -1,7 +1,9 @@
 export PATH=/usr/local/Cellar/python/2.7.9/bin:$PATH:~/bin
 export PATH=$PATH:/usr/local/bin/
-export PATH="$HOME/Library/Haskell/bin:$PATH"
 export TERM=xterm-256color
+
+export NVM_DIR="$HOME/.nvm"
+  . "$(brew --prefix nvm)/nvm.sh"
 
 alias s=subl
 alias g=git
