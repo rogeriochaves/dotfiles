@@ -23,4 +23,7 @@ git submodule update
 # speed up keystroke
 defaults write -g KeyRepeat -int 0.5
 
+# trash
+brew install trash
+
 exit 0

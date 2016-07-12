@@ -28,6 +28,7 @@ alias ls='ls -G'
 alias ll='ls -la'
 alias gbc="git branch 2> /dev/null | grep -e ^* | awk '{ print \$2 }' | pbcopy"
 alias be="bundle exec"
+alias rm=trash
 
 source ~/.profile
 
@@ -35,4 +36,3 @@ source ~/.profile
 if [ -f ~/.current_project_bash ]; then
   source ~/.current_project_bash
 fi
-
