@@ -8,6 +8,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AutoHideTmuxClientSession</key>
+	<false/>
 	<key>CheckTestRelease</key>
 	<false/>
 	<key>Default Bookmark Guid</key>
@@ -55,9 +57,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>769 110 445 251 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>220 182 796 473 0 0 1280 777 </string>
+	<string>220 157 796 473 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1 346 570 429 0 0 1280 777 </string>
+	<string>0 0 1280 800 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>152 50 570 429 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
@@ -323,7 +325,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>tmux</string>
+			<string>tmux attach</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -696,7 +698,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>12</integer>
+			<integer>1</integer>
 			<key>Working Directory</key>
 			<string>/Users/rchaves</string>
 		</dict>
@@ -707,6 +709,8 @@
 	<real>493068814.13553101</real>
 	<key>OpenBookmark</key>
 	<false/>
+	<key>OpenTmuxWindowsIn</key>
+	<integer>0</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -758,6 +762,8 @@
 	<false/>
 	<key>TabViewType</key>
 	<integer>0</integer>
+	<key>UseLionStyleFullscreen</key>
+	<false/>
 	<key>WindowNumber</key>
 	<true/>
 	<key>iTerm Version</key>
