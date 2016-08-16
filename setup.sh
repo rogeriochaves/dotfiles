@@ -19,6 +19,7 @@ brew install reattach-to-user-namespace
 
 # vim
 ln -s "$(pwd)/.vim" ~
+mkdir ~/.vim/tmp
 git submodule init
 git submodule update
 
