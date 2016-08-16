@@ -3,6 +3,7 @@
 ln -s "$(pwd)/.bash_profile" ~
 ln -s "$(pwd)/.gitconfig" ~
 ln -s "$(pwd)/.gitignore" ~
+ln -s "$(pwd)/.iterm" ~
 
 # mutt
 ln -s "$(pwd)/.muttrc" ~
