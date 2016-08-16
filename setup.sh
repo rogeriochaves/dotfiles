@@ -26,4 +26,10 @@ defaults write -g KeyRepeat -int 0.5
 # trash
 brew install trash
 
+# powerline
+pip install --user powerline-status
+git clone https://github.com/powerline/fonts.git
+./fonts/install.sh
+rm -rf fonts
+
 exit 0
