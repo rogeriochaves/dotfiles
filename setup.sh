@@ -23,6 +23,13 @@ mkdir ~/.vim/tmp
 git submodule init
 git submodule update
 
+# spacemacs
+ln -s "$(pwd)/.spacemacs" ~
+brew tap d12frosted/emacs-plus
+brew install emacs-plus --with-cocoa --with-gnutls --with-librsvg --with-imagemagick --with-spacemacs-icon
+brew linkapps
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+
 # speed up keystroke
 defaults write -g KeyRepeat -int 0.5
 
