@@ -27,6 +27,7 @@ values."
      ;; better-defaults
      emacs-lisp
      themes-megapack
+     php
      ;; git
      ;; markdown
      ;; org
