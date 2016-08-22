@@ -9,9 +9,8 @@ export NVM_DIR="$HOME/.nvm"
 
 alias s=subl
 alias g=git
-alias reach='cd ~/Projects/reach'
-alias reach-vm='reach && cd reach-vm'
-alias qetest='reach && cd qetest/pinot/spec'
+alias e=emacsclient
+alias ed='emacs --daemon'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
