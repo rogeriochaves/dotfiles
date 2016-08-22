@@ -2,7 +2,7 @@
   editor = vim
 [user]
 	email = rogeriocfj+github@gmail.com
-	name = Rogério Chaves
+	name = Rogerio Chaves
 [alias]
   s = status -sb
   st = status
