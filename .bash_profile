@@ -28,8 +28,9 @@ alias grep='grep --color=auto'
 alias ls='ls -G'
 alias ll='ls -la'
 alias gbc="git branch 2> /dev/null | grep -e ^* | awk '{ print \$2 }' | pbcopy"
-alias be="bundle exec"
+alias be='bundle exec'
 alias rm=trash
+alias t='trans -brief pt:es'
 
 source ~/.profile
 

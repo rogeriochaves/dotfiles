@@ -46,4 +46,8 @@ rm -rf fonts
 echo "Seil will now be downloaded, please install it and map capslock to F10 (109)"
 wget https://pqrs.org/osx/karabiner/files/Seil-12.1.0.dmg && open Seil-12.1.0.dmg
 
+# utils
+brew install tree
+brew install translate-shell
+
 exit 0
