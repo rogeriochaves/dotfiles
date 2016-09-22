@@ -22,3 +22,5 @@ runtime vimrc.d/syntastic.vim
 runtime vimrc.d/duplicate-line-word.vim
 
 set directory=~/.vim/tmp
+set paste
+set clipboard+=unnamed
