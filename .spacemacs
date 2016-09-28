@@ -34,6 +34,7 @@ values."
      tabbar
      clojure
      groovy
+     (auto-completion :variables auto-completion-enable-snippets-in-popup t)
      ;; org
      (shell :variables
             shell-default-height 30
@@ -242,10 +243,10 @@ before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
   )
 
-(defun rchaves-js/ident-fix ()
+(defun rchaves-js/indent-fix ()
   "fix js ident"
-  (setq tab-width 2)
-  (setq evil-shift-width 2))
+  (setq tab-width 4)
+  (setq evil-shift-width 4))
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
@@ -255,9 +256,10 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq-default powerline-default-separator 'utf-8)
-  (setq js-indent-level 2)
-  (setq js2-indent-level 2)
-  (add-hook 'js-mode-hook 'rchaves-js/ident-fix)
+  (setq js-indent-level 4)
+  (setq js2-indent-level 4)
+  (global-company-mode)
+  (add-hook 'js-mode-hook 'rchaves-js/indent-fix)
   (global-set-key [mouse-4] 'scroll-down-line)
   (global-set-key [mouse-5] 'scroll-up-line)
   (spaceline-compile))
