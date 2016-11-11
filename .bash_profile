@@ -2,14 +2,14 @@ export PATH=/usr/local/Cellar/python/2.7.9/bin:$PATH:~/bin
 export PATH=$PATH:/usr/local/bin/
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$PATH:$HOME/.rvm/bin"
 export TERM=xterm-256color
-
-export NVM_DIR="$HOME/.nvm"
-  . "$(brew --prefix nvm)/nvm.sh"
+export NVM_DIR="$HOME/.nvm/usr/local/opt/nvm/nvm.sh"
 
 alias s=subl
 alias g=git
 alias e='emacs -nw '
+alias y=yarn
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
