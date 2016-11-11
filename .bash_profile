@@ -30,8 +30,7 @@ alias gbc="git branch 2> /dev/null | grep -e ^* | awk '{ print \$2 }' | pbcopy"
 alias be='bundle exec'
 alias rm=trash
 alias t='trans -brief pt:es'
-
-source ~/.profile
+alias reload='source ~/.bash_profile'
 
 # Load specific bash profile for the project I'm current working on
 if [ -f ~/.current_project_bash ]; then
