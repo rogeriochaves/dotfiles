@@ -8,7 +8,7 @@ export NVM_DIR="$HOME/.nvm/usr/local/opt/nvm/nvm.sh"
 
 alias s=subl
 alias g=git
-alias e='emacs -nw '
+alias e="emacsclient -nw --alternate-editor="" -c "$@""
 alias y=yarn
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
