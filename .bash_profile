@@ -4,7 +4,9 @@ export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
 export TERM=xterm-256color
-export NVM_DIR="$HOME/.nvm/usr/local/opt/nvm/nvm.sh"
+
+export NVM_DIR="$HOME/.nvm"
+source /usr/local/opt/nvm/nvm.sh
 
 alias s=subl
 alias g=git
