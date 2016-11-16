@@ -15,3 +15,5 @@ Seil-12.1.0.dmg
 node_modules*
 bower_components*
 npm-debug.log
+
+.#*
