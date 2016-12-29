@@ -1,5 +1,6 @@
 [core]
   editor = vim
+  hooksPath = ~/.git-hooks
 [user]
 	email = rogeriocfj+github@gmail.com
 	name = Rogerio Chaves
