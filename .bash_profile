@@ -32,11 +32,18 @@ alias ll='ls -la'
 alias gbc="git branch 2> /dev/null | grep -e ^* | awk '{ print \$2 }' | pbcopy"
 alias be='bundle exec'
 alias rm=trash
-alias t='trans -brief pt:es'
+alias t='trans :es'
 alias reload='source ~/.bash_profile'
 
 dotenv() {
     eval "$(cat .env | sed 's/^/export /g' | sed 's/=/=\"/g' | sed 's/$/"/g')"
+}
+
+clear_docker_machine() {
+    unset DOCKER_TLS_VERIFY;
+    unset DOCKER_HOST;
+    unset DOCKER_CERT_PATH;
+    unset DOCKER_MACHINE_NAME;
 }
 
 # Load specific bash profile for the project I'm current working on
