@@ -4,6 +4,7 @@ ln -s "$(pwd)/.bash_profile" ~
 ln -s "$(pwd)/.gitconfig" ~
 ln -s "$(pwd)/.gitignore" ~
 ln -s "$(pwd)/.iterm" ~
+ln -s "$(pwd)/.git-prompt.sh" ~
 
 # mutt
 ln -s "$(pwd)/.muttrc" ~
@@ -38,6 +39,7 @@ defaults write -g KeyRepeat -int 0.5
 brew install trash
 
 # powerline
+brew install python
 pip install --user powerline-status
 git clone https://github.com/powerline/fonts.git
 ./fonts/install.sh
@@ -50,5 +52,6 @@ wget https://pqrs.org/osx/karabiner/files/Seil-12.1.0.dmg && open Seil-12.1.0.dm
 # utils
 brew install tree
 brew install translate-shell
+brew install ag
 
 exit 0
