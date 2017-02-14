@@ -6,7 +6,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export TERM=xterm-256color
 
 export NVM_DIR="$HOME/.nvm"
-source /usr/local/opt/nvm/nvm.sh
+alias nvm="unalias nvm && source /usr/local/opt/nvm/nvm.sh && nvm"
+export PATH="$HOME/.nvm/versions/node/v6.2.0/bin:$PATH"
 
 alias s=subl
 alias g=git
@@ -33,6 +34,10 @@ alias be='bundle exec'
 alias rm=trash
 alias t='trans -brief pt:es'
 alias reload='source ~/.bash_profile'
+
+dotenv() {
+    eval "$(cat .env | sed 's/^/export /g' | sed 's/=/=\"/g' | sed 's/$/"/g')"
+}
 
 # Load specific bash profile for the project I'm current working on
 if [ -f ~/.current_project_bash ]; then

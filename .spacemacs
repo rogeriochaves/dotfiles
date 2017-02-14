@@ -27,29 +27,29 @@ values."
      ;; better-defaults
      emacs-lisp
      themes-megapack
-     php
+     ;; php
      git
      markdown
      osx
      tabbar
      clojure
-     groovy
      javascript
      react
+     elm
      (auto-completion :variables auto-completion-enable-snippets-in-popup t)
      ;; org
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
      ;; spell-checking
-     ;; syntax-checking
+     syntax-checking
      ;; version-control
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '(emmet-mode dtrt-indent)
+   dotspacemacs-additional-packages '(emmet-mode dtrt-indent groovy-mode)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -245,11 +245,6 @@ before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
   )
 
-(defun rchaves-js/indent-fix ()
-  "fix js ident"
-  (setq tab-width 2)
-  (setq evil-shift-width 2))
-
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
@@ -257,10 +252,11 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+  (add-hook 'prog-mode-hook #'(lambda ()
+                                (dtrt-indent-mode)
+                                (dtrt-indent-adapt)))
   (setq-default powerline-default-separator 'utf-8)
-  (setq js-indent-level 2)
   (global-company-mode)
-  (add-hook 'js-mode-hook 'rchaves-js/indent-fix)
   (global-set-key [mouse-4] 'scroll-down-line)
   (global-set-key [mouse-5] 'scroll-up-line)
   (spaceline-compile))
@@ -271,7 +267,14 @@ you should place your code here."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(paradox-github-token t))
+ '(js-indent-level 2)
+ '(js2-basic-offset 2)
+ '(paradox-github-token t)
+ '(web-mode-markup-indent-offset 2)
+ '(web-mode-code-indent-offset 2)
+ '(tab-width 2)
+ '(evil-shift-width 2)
+ '(tabbar-separator (quote (0.5))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
