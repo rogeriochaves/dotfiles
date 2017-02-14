@@ -1,31 +1,37 @@
 [core]
-  editor = vim
-  hooks-path = ~/.git-hooks
+	editor = vim
+	hooks-path = ~/.git-hooks
 [user]
-	email = rogeriocfj+github@gmail.com
+	email = rogeriocfj@gmail.com
 	name = Rogerio Chaves
+	signingkey = F551B6DF
 [alias]
-  s = status -sb
-  st = status
+	s = status -sb
+	st = status
 	df = diff --cached --color --color-words
 	dff = diff --color --color-words
 	current-branch = rev-parse --abbrev-ref HEAD
 	graph = log --graph --decorate --oneline --branches
 	l = log
 	co = checkout
-  ci = commit
-  undo = reset --soft HEAD^
-  ll = log --pretty=oneline
-  prom = pull --rebase origin master
-  pfwl = push --force-with-lease
-  ap = add -p
+	ci = commit
+	undo = reset --soft HEAD^
+	ll = log --pretty=oneline
+	prom = pull --rebase origin master
+	pfwl = push --force-with-lease
+	ap = add -p
+	lg = log --graph --pretty=format:'%C(yellow)%h %Cblue%aN %Cgreen%ar %Cblue%G? %Creset%s'
 [color]
 	ui = auto
 [push]
 	default = current
 [pull]
-  default = simple
+	default = simple
 [github]
-  user = rogeriochaves
+	user = rogeriochaves
 [credential]
-  helper = osxkeychain
+	helper = osxkeychain
+[commit]
+	gpgsign = true
+[rebase]
+	gpgsign = true
