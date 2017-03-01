@@ -46,6 +46,10 @@ clear_docker_machine() {
     unset DOCKER_MACHINE_NAME;
 }
 
+npminfest () {
+   export PATH="$(pwd)/node_modules/.bin:$PATH";
+}
+
 # Load specific bash profile for the project I'm current working on
 if [ -f ~/.current_project_bash ]; then
   source ~/.current_project_bash
