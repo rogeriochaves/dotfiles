@@ -57,6 +57,7 @@ rm -rf fonts
 
 # seil
 echo "Seil will now be downloaded, please install it and map capslock to F10 (109)"
+brew install wget
 wget https://pqrs.org/osx/karabiner/files/Seil-12.1.0.dmg && open Seil-12.1.0.dmg
 
 # utils
