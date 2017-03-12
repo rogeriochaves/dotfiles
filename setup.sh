@@ -1,10 +1,15 @@
 #!/bin/sh
 
+brew install cask
+
 ln -s "$(pwd)/.bash_profile" ~
 ln -s "$(pwd)/.gitconfig" ~
 ln -s "$(pwd)/.gitignore" ~
-ln -s "$(pwd)/.iterm" ~
 ln -s "$(pwd)/.git-prompt.sh" ~
+
+# iterm
+ln -s "$(pwd)/.iterm" ~
+brew cask install iterm
 
 # mutt
 ln -s "$(pwd)/.muttrc" ~
