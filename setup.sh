@@ -11,6 +11,10 @@ ln -s "$(pwd)/.git-prompt.sh" ~
 ln -s "$(pwd)/.iterm" ~
 brew cask install iterm2
 
+# gpgtools
+brew install gpg
+brew cask install gpgtools
+
 # mutt
 ln -s "$(pwd)/.muttrc" ~
 mkdir ~/.mutt
