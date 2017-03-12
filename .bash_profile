@@ -3,7 +3,7 @@ export PATH=$PATH:/usr/local/bin/
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
-export TERM=xterm-256color
+export TERM=screen-256color
 
 export NVM_DIR="$HOME/.nvm"
 alias nvm="unalias nvm && source /usr/local/opt/nvm/nvm.sh && nvm"
