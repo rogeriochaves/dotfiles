@@ -43,7 +43,7 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 git clone https://github.com/evacchi/tabbar-layer ~/.emacs.d/private/tabbar
 
 # speed up keystroke
-defaults write -g KeyRepeat -int 0.5
+defaults write -g KeyRepeat -int 1
 
 # trash
 brew install trash
