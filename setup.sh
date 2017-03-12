@@ -24,6 +24,7 @@ ln -s "$(pwd)/.mutt/crypto" ~/.mutt
 # tmux
 ln -s "$(pwd)/.tmux.conf" ~
 ln -s "$(pwd)/.tmux-line" ~
+brew install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 brew install reattach-to-user-namespace
 
