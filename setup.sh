@@ -55,10 +55,12 @@ git clone https://github.com/powerline/fonts.git
 ./fonts/install.sh
 rm -rf fonts
 
-# seil
-echo "Seil will now be downloaded, please install it and map capslock to F10 (109)"
+# Karabiner-Elements
+echo "Karabiner-Elements will now be downloaded, please install it and map capslock to F13"
 brew install wget
-wget https://pqrs.org/osx/karabiner/files/Seil-12.1.0.dmg && open Seil-12.1.0.dmg
+wget https://pqrs.org/latest/karabiner-elements-latest.dmg && open karabiner-elements-latest.dmg
+mkdir -p ~/.config/karabiner/
+ln -s "$(pwd)/karabiner.json" ~/.config/karabiner
 
 # utils
 brew install tree
