@@ -9,7 +9,7 @@ ln -s "$(pwd)/.git-prompt.sh" ~
 
 # iterm
 ln -s "$(pwd)/.iterm" ~
-brew cask install iterm
+brew cask install iterm2
 
 # mutt
 ln -s "$(pwd)/.muttrc" ~
