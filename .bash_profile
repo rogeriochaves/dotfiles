@@ -7,12 +7,13 @@ export TERM=screen-256color
 
 export NVM_DIR="$HOME/.nvm"
 alias nvm="unalias nvm && source /usr/local/opt/nvm/nvm.sh && nvm"
-export PATH="$HOME/.nvm/versions/node/v6.2.0/bin:$PATH"
+export PATH="$HOME/.nvm/versions/node/v8.0.0/bin:$PATH"
 
 alias s=subl
 alias g=git
 alias e="emacsclient -nw --alternate-editor="" -c "$@""
 alias y=yarn
+alias n="npm run"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
@@ -39,7 +40,7 @@ dotenv() {
     eval "$(cat .env | sed 's/^/export /g' | sed 's/=/=\"/g' | sed 's/$/"/g')"
 }
 
-clear_docker_machine() {
+docker-machine-clear() {
     unset DOCKER_TLS_VERIFY;
     unset DOCKER_HOST;
     unset DOCKER_CERT_PATH;
