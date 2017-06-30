@@ -1,6 +1,7 @@
 [core]
 	editor = vim
 	hooks-path = ~/.git-hooks
+	excludesfile = ~/.gitignore
 [user]
 	email = rogeriocfj@gmail.com
 	name = Rogerio Chaves
