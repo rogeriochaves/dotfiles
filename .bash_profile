@@ -6,8 +6,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export TERM=screen-256color
 
 export NVM_DIR="$HOME/.nvm"
-alias nvm="unalias nvm && source /usr/local/opt/nvm/nvm.sh && nvm"
-export PATH="$HOME/.nvm/versions/node/v8.0.0/bin:$PATH"
+alias nvm="unalias nvm && source $NVM_DIR/nvm.sh && nvm"
+export PATH="$HOME/.nvm/versions/node/v8.11.3/bin:$PATH"
 
 alias s=subl
 alias g=git
