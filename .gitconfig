@@ -19,9 +19,11 @@
 	undo = reset --soft HEAD^
 	ll = log --pretty=oneline
 	prom = pull --rebase origin master
+	prot = pull --rebase origin trunk
 	pfwl = push --force-with-lease
 	ap = add -p
 	lg = log --graph --pretty=format:'%C(yellow)%h %Cblue%aN %Cgreen%ar %Cblue%G? %Creset%s'
+	mine = !git log --author=\"$(git config user.name)\"
 [color]
 	ui = auto
 [push]
