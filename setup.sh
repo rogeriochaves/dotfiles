@@ -28,12 +28,6 @@ brew install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 brew install reattach-to-user-namespace
 
-# vim
-ln -s "$(pwd)/.vim" ~
-mkdir ~/.vim/tmp
-git submodule init
-git submodule update
-
 # spacemacs
 ln -s "$(pwd)/.spacemacs" ~
 brew tap d12frosted/emacs-plus
@@ -42,29 +36,29 @@ brew linkapps
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 git clone https://github.com/evacchi/tabbar-layer ~/.emacs.d/private/tabbar
 
-# speed up keystroke
+# speed up keystroke, disable press and hold, and show hidden files
 defaults write -g KeyRepeat -int 1
+defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write com.apple.finder AppleShowAllFiles TRUE
+killall Finder
 
 # trash
 brew install trash
 
 # powerline
-brew install python
-pip install --user powerline-status
+brew install python3
+pip3 install --user powerline-status
 git clone https://github.com/powerline/fonts.git
 ./fonts/install.sh
 rm -rf fonts
-
-# Karabiner-Elements
-echo "Karabiner-Elements will now be downloaded, please install it and map capslock to F13"
-brew install wget
-wget https://pqrs.org/latest/karabiner-elements-latest.dmg && open karabiner-elements-latest.dmg
-mkdir -p ~/.config/karabiner/
-ln -s "$(pwd)/karabiner.json" ~/.config/karabiner
 
 # utils
 brew install tree
 brew install translate-shell
 brew install ag
+
+echo "Manual steps:"
+echo "1 - Open iTerm2 preferences and check the Load Preferences checkbox pointing to ~/.iterm"
+echo "2 - Go to Profiles > Text and change the font to Source Code Pro for Powerline"
 
 exit 0
