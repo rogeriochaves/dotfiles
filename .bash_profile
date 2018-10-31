@@ -9,6 +9,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 export NVM_DIR="$HOME/.nvm"
 alias nvm="unalias nvm && source $NVM_DIR/nvm.sh && nvm"
 export PATH="$HOME/.nvm/versions/node/v8.11.3/bin:$PATH"
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 alias s=subl
 alias g=git

@@ -56,6 +56,7 @@ rm -rf fonts
 brew install tree
 brew install translate-shell
 brew install ag
+brew install fzf
 
 echo "Manual steps:"
 echo "1 - Open iTerm2 preferences and check the Load Preferences checkbox pointing to ~/.iterm"
