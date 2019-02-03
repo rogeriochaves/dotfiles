@@ -4,6 +4,7 @@ export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
 export TERM=screen-256color
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 export NVM_DIR="$HOME/.nvm"
 alias nvm="unalias nvm && source $NVM_DIR/nvm.sh && nvm"
@@ -40,11 +41,8 @@ dotenv() {
     eval "$(cat .env | sed 's/^/export /g' | sed 's/=/=\"/g' | sed 's/$/"/g')"
 }
 
-docker-machine-clear() {
-    unset DOCKER_TLS_VERIFY;
-    unset DOCKER_HOST;
-    unset DOCKER_CERT_PATH;
-    unset DOCKER_MACHINE_NAME;
+unset-docker-machine() {
+    eval "$(docker-machine env --unset)"
 }
 
 npminfest () {

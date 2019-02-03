@@ -5,7 +5,7 @@
 [user]
 	email = rogeriocfj@gmail.com
 	name = Rogerio Chaves
-	signingkey = F551B6DF
+	signingkey = 509B1D94
 [alias]
 	s = status -sb
 	st = status
