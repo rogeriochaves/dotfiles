@@ -6,6 +6,8 @@
 	email = rogeriocfj@gmail.com
 	name = Rogerio Chaves
 	signingkey = 509B1D94
+[includeIf "gitdir:~/git_tree/"]
+	path = .gitconfig-job
 [alias]
 	s = status -sb
 	st = status
@@ -35,6 +37,6 @@
 [credential]
 	helper = osxkeychain
 [commit]
-	gpgsign = false
+	gpgsign = true
 [rebase]
-	gpgsign = false
+	gpgsign = true
