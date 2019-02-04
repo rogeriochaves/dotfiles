@@ -1,1 +1,0 @@
-cabbrev bda bufdo bd

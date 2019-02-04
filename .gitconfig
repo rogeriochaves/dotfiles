@@ -35,6 +35,6 @@
 [credential]
 	helper = osxkeychain
 [commit]
-	gpgsign = true
+	gpgsign = false
 [rebase]
-	gpgsign = true
+	gpgsign = false
