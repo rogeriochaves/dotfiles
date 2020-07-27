@@ -34,9 +34,3 @@
 	default = simple
 [github]
 	user = rogeriochaves
-[credential]
-	helper = osxkeychain
-[commit]
-	gpgsign = true
-[rebase]
-	gpgsign = true
