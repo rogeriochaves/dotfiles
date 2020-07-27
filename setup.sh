@@ -7,6 +7,10 @@ ln -s "$(pwd)/.gitconfig" ~
 ln -s "$(pwd)/.gitignore" ~
 ln -s "$(pwd)/.git-prompt.sh" ~
 
+# ohmyzsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+ln -s "$(pwd)/.zshrc" ~
+
 # iterm
 ln -s "$(pwd)/.iterm" ~
 brew cask install iterm2
