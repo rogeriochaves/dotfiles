@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/rchavesferna/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -103,13 +103,12 @@ export PATH=/usr/local/Cellar/python/2.7.9/bin:$PATH:~/bin
 export PATH=$PATH:/usr/local/bin/
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="$PATH:$HOME/.rvm/bin"
 export TERM=screen-256color
 export HOMEBREW_NO_AUTO_UPDATE=1
 
 export NVM_DIR="$HOME/.nvm"
 alias nvm="unalias nvm && source $NVM_DIR/nvm.sh && nvm"
-export PATH="$HOME/.nvm/versions/node/v8.11.3/bin:$PATH"
+export PATH="$HOME/.nvm/versions/node/v14.15.3/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 alias s=subl
@@ -117,8 +116,6 @@ alias g=git
 alias e="emacsclient -nw --alternate-editor="" -c "$@""
 alias y=yarn
 alias n="npm run"
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 alias grep='grep --color=auto'
 alias ls='ls -G'
@@ -145,6 +142,6 @@ npminfest () {
 if [ -f ~/.current_project_bash ]; then
   source ~/.current_project_bash
 fi
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="$(gem environment gemdir)/bin:$PATH"
+#export PATH="/usr/local/opt/ruby/bin:$PATH"
+#export PATH="$(gem environment gemdir)/bin:$PATH"
 
