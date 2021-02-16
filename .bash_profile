@@ -8,7 +8,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 export NVM_DIR="$HOME/.nvm"
 alias nvm="unalias nvm && source $NVM_DIR/nvm.sh && nvm"
-export PATH="$HOME/.nvm/versions/node/v8.11.3/bin:$PATH"
+export PATH="$HOME/.nvm/versions/node/v12.9.0/bin:$PATH"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 alias s=subl
@@ -35,8 +35,7 @@ alias ll='ls -la'
 alias gbc="git branch 2> /dev/null | grep -e ^* | awk '{ print \$2 }' | pbcopy"
 alias be='bundle exec'
 alias rm=trash
-alias t='trans :es'
-alias reload='source ~/.bash_profile'
+alias t='trans :nl'
 
 dotenv() {
     eval "$(cat .env | sed 's/^/export /g' | sed 's/=/=\"/g' | sed 's/$/"/g')"
