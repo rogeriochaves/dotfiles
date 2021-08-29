@@ -127,7 +127,7 @@ alias t='trans :es'
 alias reload='source ~/.zshrc'
 
 dotenv() {
-    eval "$(cat .env | sed 's/^/export /g' | sed 's/=/=\"/g' | sed 's/$/"/g')"
+    eval "$(cat .env | sed 's/^/export /g' | sed 's/=\(.*\)/=\"\1"/g')"
 }
 
 unset-docker-machine() {
