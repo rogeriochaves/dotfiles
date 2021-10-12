@@ -2,7 +2,8 @@
 
 brew install cask
 
-ln -s "$(pwd)/.bash_profile" ~
+rm ~/.zshrc
+ln -s "$(pwd)/.zshrc" ~
 ln -s "$(pwd)/.gitconfig" ~
 ln -s "$(pwd)/.gitignore" ~
 ln -s "$(pwd)/.git-prompt.sh" ~
